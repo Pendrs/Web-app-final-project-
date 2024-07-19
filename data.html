@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-icons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>INPUT DATA</title>
+    <style>
+        .bgs {
+            background-color: #5335b8;
+        }
+
+        .bgu {
+            background-color: #4b70f5;
+        }
+
+        .sidebar a {
+            color: rgb(0, 0, 0);
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top bgs bg-gradient shadow">
+        <div class="container-fluid">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand bi-rocket-takeoff-fill">
+                Logo Instansi</a>
+            <div class="offcanvas offcanvas-end offcanvas-md bgu" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+
+                        <a class="nav-link" href="#">Dashboard</a>
+
+
+                        <a class="nav-link" href="#">Input Data</a>
+
+                        <a class="nav-link" href="#">Rekap Nilai</a>
+
+
+                    </ul>
+                    <a href="hallogin.html"><button class="btn btn-danger shadow position-sticky-bottom"
+                            type="submit">Logout</button></a>
+                </div>
+            </div>
+            <div class="d-flex d-none d-md-inline-block" role="">
+                <a href="hallogin.html"><button class="btn btn-danger shadow" type="submit">Logout</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-2 sidebar d-none d-md-inline-block bgu">
+            <div class="text-center mt-3">
+                <div class="profile-pic mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </div>
+                <a>
+                    <strong>USERNAME</strong></a>
+            </div>
+            <hr>
+            <a href="#" class="bi-house-fill">Dashboard</a>
+            <hr>
+            <a href="#" class="bi-file-earmark-plus-fill">Input Data</a>
+            <hr>
+            <a href="#" class="bi-clipboard2-check">Rekap Nilai</a>
+            <hr>
+        </div>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="text-center  position-sticky top-25 start-50 pt-3 pb-2 mb-3 border-bottom ">
+
+                <h1>INPUT NILAI</h1>
+
+
+
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form class="form-horizontal main" role="form">
+                        <div class="form-group">
+                            <h4>Silahkan isi Form Berikut :</h4><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label texkir">Nama</label>
+                            <div>
+                                <input type="text" class="form-control" id="firstname" placeholder="Masukkan Nama">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">NIM</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname" placeholder="Masukkan NIM">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Mata Kuliah</label>
+                            <div>
+                                <select class="form-control">
+                                    <option>Pilih Mata Kuliah</option>
+                                    <option>Pemrograman WEB</option>
+                                    <option>Aplikasi Mobile</option>
+                                    <option>Software Developer</option>
+                                    <option>E-Commerce</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">Kehadiran</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Masukkan jumlah Kehadiran">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">Tugas</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Masukkan nilai Tugas">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">Responsi</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Masukkan Nilai Responsi">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">UTS</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname" placeholder="Masukkan Nilai UTS">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">UAS</label>
+                            <div>
+                                <input type="text" class="form-control" id="lastname" placeholder="Masukan Nilai UAS">
+                            </div><br><br>
+                        </div>
+                        <div class="form-group">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <button type="button" class="btn btn-success">Submit</button><br>
+                                <button type="button" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bgs">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+        </footer>
+
+
+
+</body>
+
+</html>
